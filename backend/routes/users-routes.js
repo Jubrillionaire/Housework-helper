@@ -1,6 +1,6 @@
 import express from 'express';
 import { check } from 'express-validator';
-import { createUser, getProfiles, loginUser } from '../controllers/users-controllers';
+import { createUser, loginUser, uploadImage, getImages } from '../controllers/users-controllers';
 
 const router = express.Router();
 
@@ -15,6 +15,9 @@ router.post('/register',
 
  router.post('/login', loginUser)
 
+ router.post('/upload-image/:user_id', uploadImage)
+
+ router.get("/profile-image/:user_id", getImages)
  
 
 

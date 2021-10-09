@@ -17,8 +17,8 @@ export const createWorkerProfile = async (req, res) => {
         return res.status(401).json("worker already exists!");
       } else {
         const newWorker = await client.query(
-          "INSERT INTO workers_profiles ( user_id, profile_pic, services, about, location, rate) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *",
-          [user_id, profile_pic, services, about, location, rate]
+          "INSERT INTO workers_profiles ( user_id, services, about, location, rate) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+          [user_id, services, about, location, rate]
         );
         if (newWorker) {
           res.send({

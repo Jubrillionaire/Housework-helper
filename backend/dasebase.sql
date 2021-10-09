@@ -34,6 +34,14 @@ CREATE TABLE workers_profiles(
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
+CREATE TABLE users_images(
+     image_id UUID DEFAULT uuid_generate_v4(),
+     user_id UUID,
+     image_url VARCHAR NOT NULL,
+    PRIMARY KEY (image_id),
+    FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+ 
 --============ INSERTING DUMMY DATA INTO TABLES ============
 
 insert into users (user_name, user_email, user_password, admin, role) values ('Jacob', 'jacob@gmail.com', 'jacob123', false, 'client');
@@ -59,5 +67,8 @@ ALTER DATABASE "housework-helper-app" RENAME TO housework_helper_app;
 
 ALTER TABLE clients_profiles DROP COLUMN username;
 
+ALTER TABLE clients_profiles DROP COLUMN profile_pic;
 
 
+
+DELETE FROM workers_profiles WHERE worker_id = ' c31a344c-8826-4525-8f5c-bda4cd4454a1' RETURNING *;
