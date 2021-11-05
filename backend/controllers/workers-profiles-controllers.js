@@ -42,26 +42,28 @@ export const createWorkerProfile = async (req, res) => {
 
 
 
+
 export const updateWorkerProfile = async (req, res) => {
     const { id } = req.params;
-    const { user_id, profile_pic, services, about, location, rate} = req.body;
+    const { user_id, services, about, location, rate} = req.body;
 
   if (req.decoded.user_id === user_id) {
 
       try{
         const updateProfile = await client.query(
-          "UPDATE workers_profiles SET profile_pic = $1, services = $2, about = $3, location = $4, rate = $5 WHERE worker_id = $6 AND user_id = $7 RETURNING *",
-          [profile_pic, services, about, location, rate, id, user_id]
+          "UPDATE workers_profiles SET services = $1, about = $2, location = $3, rate = $4 WHERE worker_id = $5 AND user_id = $6 RETURNING *",
+          [services, about, location, rate, id, user_id]
         );
 
       if(updateProfile.rows.length === 0){
         res.send({
-          msg: "you can not update profile for another User!"
+          msg: "unable to update profile!"
         })
       }
       else{
         res.send({
-          msg: "profile updated successfully!!"
+          msg: "profile updated successfully!!",
+          profile: updateProfile.rows[0]
         })
       }
               

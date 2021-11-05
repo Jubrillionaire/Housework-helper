@@ -23,7 +23,7 @@ CREATE TABLE clients_profiles(
 
 CREATE TABLE workers_profiles(
     worker_id UUID DEFAULT uuid_generate_v4(),
-    user_id UUID,
+    user_id UUID, 
     username VARCHAR(255) NOT NULL,
     profile_pic VARCHAR,
     rate INTEGER NOT NULL,
@@ -72,3 +72,5 @@ ALTER TABLE clients_profiles DROP COLUMN profile_pic;
 
 
 DELETE FROM workers_profiles WHERE worker_id = ' c31a344c-8826-4525-8f5c-bda4cd4454a1' RETURNING *;
+
+DELETE FROM workers_profiles WHERE worker_id = '99a7835c-69e8-4ccf-b7af-033a82bf66d9';

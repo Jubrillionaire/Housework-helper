@@ -13,7 +13,7 @@ export const tokenGenerator = (user, callback) => {
       role: user.role
     },
     process.env.SECRET,
-    { expiresIn: "24h" }
+    // { expiresIn: "24h" }
   );
 };
  
