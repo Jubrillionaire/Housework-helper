@@ -1,0 +1,46 @@
+.image-upload{
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
+}
+
+.modal-inner img{
+    height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.modal-inner{
+    padding: 50px;
+}
+
+.img-form{
+    padding: 50px;
+}
+
+.profile-img:hover{
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.profile-img:hover + .img-text{
+    display: block;
+}
+.profile-img-container p{
+    position: absolute;
+    bottom: 40%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    left: 34%;
+    display: none;
+}
+
+.profile-img-container{
+    position: relative;
+
+}

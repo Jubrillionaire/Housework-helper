@@ -1,0 +1,37 @@
+.workers-profile{
+
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workers-profile h1{
+    text-align: center;
+}
+
+
+.createBtn{
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.profile-pic img{
+    height: 100%;
+    border-radius: 50%;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    border: 10px solid darkgray;
+}
+
+.profile-pic{
+    height: 300px;
+    width: 300px;
+
+}
+
+.profile-details{
+    display: flex;
+    justify-content: space-around;
+}

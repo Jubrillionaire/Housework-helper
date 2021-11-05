@@ -1,0 +1,28 @@
+.create-profile-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.create-profile-container h1{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 5vh;
+}
+
+/* .create-details{
+    width: 50%;
+} */
+
+.create-pic{
+    width: 50%
+}
+
+.worker-create-profile{
+    height: 60vh;
+}
+
+.worker-profile h1{
+    margin-top: 20vh;
+    text-align: center;  
+}

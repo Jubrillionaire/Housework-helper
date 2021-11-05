@@ -1,0 +1,4 @@
+export enum ActionType {
+    POST_PROFILE = 'POST_PROFILE',
+    SHOW_PROFILE_MODAL = 'SHOW_PROFILE_MODAL'
+ }

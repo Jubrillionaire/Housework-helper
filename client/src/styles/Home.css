@@ -1,0 +1,87 @@
+.home-container {
+  padding: 50px 0;
+  padding-left: 70px;
+}
+
+.section-one h1 {
+  font-size: 3.5rem;
+  line-height: 5rem;
+  color: #343c5c;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.section-one {
+  display: flex;
+  margin-top: 2vh;
+  justify-content: space-evenly;
+}
+
+.section-one-first {
+  width: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.section-one-first .btn {
+  width: fit-content;
+  align-self: flex-start;
+  background-image: linear-gradient(110deg, #fe5403 0%, #ff8500 80%);
+  background-color: transparent;
+  padding: 15px 38px 15px 38px;
+  opacity: 1;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.section-one-second {
+  width: 55%;
+}
+
+.section-one-second img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section-two{
+       margin-top: 6rem;
+}
+
+.section-two h2{
+    font-size: 3rem;
+    line-height: 34px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 3rem;
+    color: #343c5c;
+}
+
+.sub-p{
+    color: #7b8095;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 5rem;
+    letter-spacing: 0px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.cards > * {
+    box-shadow:0 0 10px rgba(0,0,0,0.8);
+       padding: 20px;
+  }
+  

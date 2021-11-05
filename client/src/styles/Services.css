@@ -1,0 +1,16 @@
+.service-title{
+    color: #343c5c;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh ;
+
+}
+
+.services-container{
+    height: 100vh
+}

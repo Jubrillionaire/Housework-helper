@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", Sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg, #F2F5FA, transparent);
+  margin: 0;
+  padding: 0;
+  
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+

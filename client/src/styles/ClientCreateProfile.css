@@ -1,0 +1,19 @@
+.create-profile-container{
+    height: 80vh;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.create-profile-container h1{
+    text-align: center;
+}
+
+.create-details{
+    width: 60%;
+}
+
+.create-pic{
+    width: 50%
+}
+

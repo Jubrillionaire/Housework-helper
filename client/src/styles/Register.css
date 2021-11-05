@@ -1,0 +1,44 @@
+.register-container{
+    margin-top: 100px;
+    padding: 20px;
+    height:70vh;
+}
+
+.form{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+     margin:  0 auto;
+     font-size: 20px;
+}
+
+.register-container h1{
+    text-align: center;
+}
+
+.radios{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.radios > * {
+    align-self: center;
+}
+
+.form-btn{
+    width: fit-content;
+    align-self: center;
+    background-image: linear-gradient(110deg, #fe5403 0%, #ff8500 80%);
+    background-color: transparent;
+    padding: 12px 36px !important;
+    opacity: 1;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    outline: none;
+    border: none;
+}
+
+.form > *{
+  margin-bottom: 3rem;
+}
